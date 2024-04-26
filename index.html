@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Textarea Example</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css">
+</head>
+<body>
+ 
+<div class="container">
+  <h1 class="title">Tạo 1000 site cho sốp version 1</h1>
+  <div class="box-area">
+    <textarea id="inputText" data-intro='Nhập đường link cần xử lý vào đây' placeholder="Nhập đường dẫn của sốp vào đây..."></textarea>
+  </div>
+
+  <div id="error-message"></div>
+  <div class="controls">
+    <button class="showText" onclick="showText()"
+    data-intro =
+    'Tạo các đường dẫn ví dụ:
+      https://mylink.com/a
+      https://mylink.com/b
+      https://mylink.com/c' >Tạo trang con</button>
+    <button class="addSub" onclick="addSubDomain()" data-intro="
+    Tạo các subdomain có dạng
+      https://ad.mylink.com
+      https://dk.mylink.com
+      https://qc.mylink.com
+      https://ld.mylink.com
+    ">Add SubDomain</button>
+    <div id="copyButtonContainer"></div>
+  </div>
+  <div id="output"></div>
+  <textarea id="hiddenTextarea" style="display: none;"></textarea>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+<script src="app.js">
+  
+</script>
+
+</body>
+</html>
